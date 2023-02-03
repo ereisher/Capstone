@@ -1,6 +1,6 @@
 # Set working directory to the place which have:
 # 'metadata.tsv', 'table.qza', 'taxonomy.qza'
-setwd("~/Downloads/qiime2_norm1-4")
+setwd("~/Downloads/qiime2_1-4")
 
 
 # Try loading the packge 
