@@ -1,27 +1,27 @@
-#SampleID	AnimalID	AnimalName	SampleDate	Sample_Type	Sex	DateofBirth	StageofLife	Troup	Browse	AnimalID_Browse	SampleDate_Browse	Group	Browse_Group  	Group_AnimalID
-#q2:types	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical
-PZGG103752Nov718	103752	Kira	11/7/18	feces	Female	8/8/99	Lactation	Dominant - Family	2252	103752_2252	11/07/2018_2252	not_treated	2	2_103752
-PZGG104243Nov718	104243	Louis	11/7/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	2252	104243_2252	11/07/2018_2252	not_treated	2	2_104243
-PZGG104481Nov718	104481	Kuchima	11/7/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	2252	104481_2252	11/07/2018_2252	not_treated	2	2_104481
-PZGG103752Nov618	103752	Kira	11/6/18	feces	Female	8/8/99	Lactation	Dominant - Family	2252	103752_2252	11/06/2018_2252	not_treated	2	2_103752
-PZGG104243Nov618	104243	Louis	11/6/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	2252	104243_2252	11/06/2018_2252	not_treated	2	2_104243
-PZGG104481Nov618	104481	Kuchima	11/6/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	2252	104481_2252	11/06/2018_2252	not_treated	2	2_104481
-PZGG103752Nov518	103752	Kira	11/5/18	feces	Female	8/8/99	Lactation	Dominant - Family	2252	103752_2252	11/05/2018_2252	not_treated	2	2_103752
-PZGG104481Nov518	104481	Kuchima	11/5/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	2252	104481_2252	11/05/2018_2252	not_treated	2	2_104481
-PZGG104243Nov518	104243	Louis	11/5/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	2252	104243_2252	11/05/2018_2252	not_treated	2	2_104243
-PZGG104481Apr1218	104481	Kuchima	4/12/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	0	104481_0	04/12/2018_0	not_treated	1	1_104481
-PZGG104243Apr1218	104243	Louis	4/12/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	0	104243_0	04/12/2018_0	not_treated	1	1_104243
-PZGG103752Apr1218	103752	Kira	4/12/18	feces	Female	8/8/99	Lactation	Dominant - Family	0	103752_0	04/12/2018_0	not_treated	1	1_103752
-PZGG104481Apr1118	104481	Kuchima	4/11/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	0	104481_0	04/11/2018_0	not_treated	1	1_104481
-PZGG104481Apr1018	104481	Kuchima	4/10/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	0	104481_0	04/10/2018_0	not_treated	1	1_104481
-PZGG104243Apr1018	104243	Louis	4/10/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	0	104243_0	04/10/2018_0	not_treated	1	1_104243
-PZGG103752Apr1018	103752	Kira	4/10/18	feces	Female	8/8/99	Lactation	Dominant - Family	0	103752_0	04/10/2018_0	not_treated	1	1_103752
-PZGG103752Apr918	103752	Kira	4/9/18	feces	Female	8/8/99	Lactation	Dominant - Family	0	103752_0	04/09/2018_0	not_treated	1	1_103752
-PZGG104481Mar2918	104481	Kuchima	3/29/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	0	104481_0	03/29/2018_0	not_treated	1	1_104481
-PZGG104243Mar2918	104243	Louis	3/29/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	0	104243_0	03/29/2018_0	not_treated	1	1_104243
-PZGG103752Mar2918	103752	Kira	3/29/18	feces	Female	8/8/99	Lactation	Dominant - Family	0	103752_0	03/29/2018_0	not_treated	1	1_103752
-PZGG104481Mar2818	104481	Kuchima	3/28/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	0	104481_0	03/28/2018_0	not_treated	1	1_104481
-PZGG104243Mar2818	104243	Louis	3/28/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	0	104243_0	03/28/2018_0	not_treated	1	1_104243
-PZGG104481Mar2718	104481	Kuchima	3/27/18	feces	Male	6/29/02	Mature silverback	Lone/Bachelor	0	104481_0	03/27/2018_0	not_treated	1	1_104481
-PZGG104243Mar2718	104243	Louis	3/27/18	feces	Male	5/12/99	Mature silverback	Lone/Bachelor	0	104243_0	03/27/2018_0	not_treated	1	1_104243
-PZGG103752Mar2718	103752	Kira	3/27/18	feces	Female	8/8/99	Lactation	Dominant - Family	0	103752_0	03/27/2018_0	not_treated	1	1_103752
+#SampleID	Group_AnimalID
+#q2:types	categorical	categorical
+PZGG103752Nov718	2_103752
+PZGG104243Nov718	2_104243
+PZGG104481Nov718	2_104481
+PZGG103752Nov618	2_103752
+PZGG104243Nov618	2_104243
+PZGG104481Nov618	2_104481
+PZGG103752Nov518	2_103752
+PZGG104481Nov518	2_104481
+PZGG104243Nov518	2_104243
+PZGG104481Apr1218	1_104481
+PZGG104243Apr1218	1_104243
+PZGG103752Apr1218	1_103752
+PZGG104481Apr1118	1_104481
+PZGG104481Apr1018	1_104481
+PZGG104243Apr1018	1_104243
+PZGG103752Apr1018	1_103752
+PZGG103752Apr918	1_103752
+PZGG104481Mar2918	1_104481
+PZGG104243Mar2918	1_104243
+PZGG103752Mar2918	1_103752
+PZGG104481Mar2818	1_104481
+PZGG104243Mar2818	1_104243
+PZGG104481Mar2718	1_104481
+PZGG104243Mar2718	1_104243
+PZGG103752Mar2718	1_103752
