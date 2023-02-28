@@ -4,9 +4,7 @@
 #SBATCH --mem=64000
 #SBATCH --time=12:00:00
 #SBATCH --job-name=analysis_part3
-#SBATCH --partition=batch,guest
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=erussman@unomaha.edu
+#SBATCH --partition=batch,gues
 #SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2/err3.out
 #SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2/std3.out
 #SBATCH --open-mode=append
@@ -91,16 +89,14 @@ biom add-metadata \
     -o exports/table/feature-table-w-taxa.biom \
     --observation-metadata-fp exports/table/taxonomy.tsv \
     --sc-separated taxonomy
-
+    
+# Convert feature table from biom to tsv and add in taxonomy data
 biom convert \
     -i exports/table/feature-table-w-taxa.biom \
     -o exports/table/feature-table-w-taxa.tsv \
     --to-tsv \
     --header-key 'taxonomy' \
     --output-metadata-id 'Consensus Lineage'
-# Convert feature table from biom to tsv and add in taxonomy data along the way
-# This whole biom thing is kind of confusing, but basically all that is 
-# happening here is OTU IDs are being mapped to taxonomic identifiers
  
 # Copy taxonomy to feature table dir
 cp exports/taxonomy/taxonomy.tsv exports/table
@@ -122,8 +118,7 @@ biom convert \
     --header-key 'taxonomy' \
     --output-metadata-id 'Consensus Lineage'
 
-# Get nice relative abundance data for levels 6 and 2
-
+# Get relative abundance data for all taxa levels
 declare -a taxa_levels=("2" "3" "4" "5" "6" "7")
 qza=".qza"
 
