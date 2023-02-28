@@ -5,8 +5,6 @@
 #SBATCH --time=12:00:00
 #SBATCH --job-name=picrust_analysis
 #SBATCH --partition=batch,guest
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=erussman@unomaha.edu
 #SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-5/qiime2/errpi.out
 #SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-5/qiime2/stdpi.out
 #SBATCH --open-mode=append
