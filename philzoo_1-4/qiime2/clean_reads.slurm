@@ -32,13 +32,3 @@ qiime demux summarize \
 	--i-data artifacts/demuxed-paired-end.qza \
 	--o-visualization artifacts/demux.qzv
 	
-# qiime cutadapt trim-paired \
-#    --i-demultiplexed-sequences artifacts/demuxed-paired-end.qza \
-#   --p-front-f TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG \
-#   --p-front-r GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC \
-#    --o-trimmed-sequences artifacts/paired-end-demux-trimmed.qza \
-#    --verbose > cutadapt_log.txt \
-
-# qiime demux summarize \
-#    --i-data artifacts/paired-end-demux-trimmed.qza \
-#	--o-visualization artifacts/paired-end-demux-trimmed.qzv
