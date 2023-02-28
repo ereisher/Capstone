@@ -10,7 +10,7 @@
 ![pipeline-overview](https://github.com/zalsafwani/thesis/blob/621d1302af242417919a21142b0ac8aa846ecc04/Microbiome%20Analysis%20Pipeline.png)
 The first step is pre-processing the data, then cleaning the data and conducting diversity, phylogenetic, and taxonomic analysis using QIIME2. Sub-analysis includes running  LEfSe and PICRUSt. The statistical analysis includes diversity alpha and beta group significance, and differential abundance (ANCOM). 
 
-## Tools installation and packages available in the [tools file](https://github.com/clayton-lab/BugSeq-er/blob/main/Tools.md).
+## Tools installation and packages available in the [tools file](https://github.com/ereisher/Capstone/blob/main/tools.md).
 
 
 
