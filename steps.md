@@ -16,14 +16,10 @@
     - Get the latest relese for the refrence database (SILVA).
     - Naive Bayes classifiers trained on Silva classifiers are available here: https://docs.qiime2.org/2020.6/data-resources/#taxonomy-classifiers-for-use-with-q2-feature-classifier
     - Make sure these files are included in the 'qiime2' directory: metadata.tsv, manifest, and reference database.
-    
-  Part 1 before running 'part1.slurm' check the following:
-    - Edit the path in line 8, 9, and 20.
-    - If your data contain adapter sequnces removed them using cutadapt line 35-40 (make sure to change line 37, and 38 with your adapter sequnces).
-    - If your data dosen't contain adapter sequnces then comment out lines 35-44.
-    - Run the 'sbatch part1.slurm'
-    
-  Part 2 before running 'part2.slurm' check the following:
+    - Before running 'clean_reads.slurm' check the following:
+      * Edit the path in line 8, 9, and 20.
+    - Run 'sbatch clean_reads.slurm'
+    - Before running 'dada2.slurm' check the following:
     - Edit the path in line 8, 9, and 28.
     - Look at the demux visulasation in the artifacts directory to assign trimming and truncating values.
     - If adapter sequnces were removed, look at the 'paired-end-demux-trimmed.qzv'
