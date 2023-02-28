@@ -97,26 +97,6 @@ biom convert \
     --to-tsv \
     --header-key 'taxonomy' \
     --output-metadata-id 'Consensus Lineage'
- 
-# Copy taxonomy to feature table dir
-cp exports/taxonomy/taxonomy.tsv exports/table
-
-# Modify header
-sed -i '1d' exports/table/taxonomy.tsv
-sed -i '1i #OTUID\ttaxonomy\tconfidence' exports/table/taxonomy.tsv
-
-biom add-metadata \
-    -i exports/table/feature-table.biom \
-    -o exports/table/feature-table-w-taxa.biom \
-    --observation-metadata-fp exports/table/taxonomy.tsv \
-    --sc-separated taxonomy
-
-biom convert \
-    -i exports/table/feature-table-w-taxa.biom \
-    -o exports/table/feature-table-w-taxa.tsv \
-    --to-tsv \
-    --header-key 'taxonomy' \
-    --output-metadata-id 'Consensus Lineage'
 
 # Get relative abundance data for all taxa levels
 declare -a taxa_levels=("2" "3" "4" "5" "6" "7")
