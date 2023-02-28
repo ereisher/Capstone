@@ -12,9 +12,8 @@
 3. Run Qiime2- files can be found in the qiime2 folder
     - Make directory called 'qiime2' and make sure QIIME2 version 2021.4 installed with all of the plugins listed above.
     - Build the manifest file using the 'manifest_builder.py' by specifiying -i acc_list_file -p path_to_the_raw_reads
-    - Get the metadata.tsv in the right formate (example is provided).
-    - Get the latest relese for the refrence database (SILVA).
-    - Naive Bayes classifiers trained on Silva classifiers are available here: https://docs.qiime2.org/2020.6/data-resources/#taxonomy-classifiers-for-use-with-q2-feature-classifier
+    - Get the latest release for the reference database (SILVA).
+    - Naive Bayes classifiers trained on Silva classifiers are available here: [Database] (https://docs.qiime2.org/2020.6/data-resources/#taxonomy-classifiers-for-use-with-q2-feature-classifier)
     - Make sure these files are included in the 'qiime2' directory: metadata.tsv, manifest, and reference database.
     - Before running 'clean_reads.slurm' check the following:
       * Edit the path in line 8, 9, and 20.
