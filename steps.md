@@ -41,12 +41,12 @@
 5. Run sub-analysis: LEfSe, and PICRUSt2
     - LEfSe analysis steps- files can be found in the LEfSe folder (each group has their own files)
         * Install LEfSe version 1.0.
-        * Make a sub-directory to the 'qiime2' called 'lefse'.
+        * Make a sub-directory to 'qiime2' called 'lefse'.
         * Go to the lefse directory and make sure both 'format_rel_level.sh' and 'rel_format.py' are available in the directory.
         * Run 'format_rel_level.sh'
     - PICRUSt2 analysis steps- files can be found in the PICRUSt2 folder (each group has their own files)
         * Install PICRUSt2 version 2.4.
-        * Make a sub-directory to the 'qiime2' called 'picrust'.
+        * Make a sub-directory to 'qiime2' called 'picrust'.
         * Go to the picrust directory and make sure 'picrust2.slurm'is available in the directory.
         * Before running 'picrust2.slurm' script make sure to the edit the path in lines 8, 9, 13, 18, and 19
         * Once the scripted finish create a directory called 'vis-lefse' and make sure both 'format_pathway_abun.sh', and 'pathway_format.py' are available in the directory.
