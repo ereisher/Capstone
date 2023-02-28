@@ -90,27 +90,7 @@ biom add-metadata \
     --observation-metadata-fp exports/table/taxonomy.tsv \
     --sc-separated taxonomy
 
-# Convert feature table from biom to tsv and add in taxonomy data along the way
-biom convert \
-    -i exports/table/feature-table-w-taxa.biom \
-    -o exports/table/feature-table-w-taxa.tsv \
-    --to-tsv \
-    --header-key 'taxonomy' \
-    --output-metadata-id 'Consensus Lineage'
-
-# Copy taxonomy to feature table dir
-cp exports/taxonomy/taxonomy.tsv exports/table
-
-# Modify header
-sed -i '1d' exports/table/taxonomy.tsv
-sed -i '1i #OTUID\ttaxonomy\tconfidence' exports/table/taxonomy.tsv
-
-biom add-metadata \
-    -i exports/table/feature-table.biom \
-    -o exports/table/feature-table-w-taxa.biom \
-    --observation-metadata-fp exports/table/taxonomy.tsv \
-    --sc-separated taxonomy
-
+# Convert feature table from biom to tsv and add in taxonomy data 
 biom convert \
     -i exports/table/feature-table-w-taxa.biom \
     -o exports/table/feature-table-w-taxa.tsv \
