@@ -5,8 +5,6 @@
 #SBATCH --time=12:00:00
 #SBATCH --job-name=analysis_part1
 #SBATCH --partition=batch,guest
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=erussman@unomaha.edu
 #SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-4/qiime2/err.out
 #SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-4/qiime2/std.out
 #SBATCH --open-mode=append
