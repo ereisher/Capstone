@@ -4,7 +4,7 @@
 #SBATCH --mem=64000
 #SBATCH --time=12:00:00
 #SBATCH --job-name=analysis_part3
-#SBATCH --partition=batch,gues
+#SBATCH --partition=batch,guest
 #SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2/err3.out
 #SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2/std3.out
 #SBATCH --open-mode=append
