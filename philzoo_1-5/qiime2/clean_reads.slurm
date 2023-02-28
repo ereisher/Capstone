@@ -5,8 +5,6 @@
 #SBATCH --time=12:00:00
 #SBATCH --job-name=analysis_part1
 #SBATCH --partition=batch,guest
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=erussman@unomaha.edu
 #SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-5/qiime2/err.out
 #SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-5/qiime2/std.out
 #SBATCH --open-mode=append
@@ -34,13 +32,3 @@ qiime demux summarize \
 	--i-data artifacts/demuxed-paired-end.qza \
 	--o-visualization artifacts/demux.qzv
 	
-# qiime cutadapt trim-paired \
-#    --i-demultiplexed-sequences artifacts/demuxed-paired-end.qza \
-#   --p-front-f TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG \
-#   --p-front-r GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC \
-#    --o-trimmed-sequences artifacts/paired-end-demux-trimmed.qza \
-#    --verbose > cutadapt_log.txt \
-
-# qiime demux summarize \
-#    --i-data artifacts/paired-end-demux-trimmed.qza \
-#	--o-visualization artifacts/paired-end-demux-trimmed.qzv
