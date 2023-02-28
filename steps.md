@@ -43,7 +43,6 @@
         * Install LEfSe version 1.0.
         * Make a sub-directory to the 'qiime2' called 'lefse'.
         * Go to the lefse directory and make sure both 'format_rel_level.sh' and 'rel_format.py' are available in the directory.
-        * Before running the 'format_rel_level.sh' script make sure to the edit the title for the plots that will be created (line 28, 33, 38, 43, 48, and 53).
         * Run 'format_rel_level.sh'
     - PICRUSt2 analysis steps- files can be found in the PICRUSt2 folder (each group has their own files)
         * Install PICRUSt2 version 2.4.
