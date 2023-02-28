@@ -4,7 +4,7 @@
     - Make directory called 'qc' and make a sub-directory called 'script_output'
     - Edit the paths in line 8, 9, 20, 30, 31, and 41 then run qc.slurm
 
-2. Run Qiime2- files can be found in the qiime2 folder (Each group has their own files)
+2. Run Qiime2- files can be found in the qiime2 folder (each group has their own files)
     - Make directory called 'qiime2' and make sure QIIME2 version 2021.4 installed with all of the plugins listed above.
     - Build the manifest file using the 'manifest_builder.py' by specifiying -i acc_list_file -p path_to_the_raw_reads
     - Get the latest release for the reference database (SILVA).
