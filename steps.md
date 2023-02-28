@@ -1,10 +1,10 @@
-1. Pre-process the data using FastQC and MultiQC- files can be found in the Pre-process folder
+1. Pre-process the data using FastQC and MultiQC- files can be found in the [Pre-process folder](https://github.com/ereisher/Capstone/tree/main/Preprocess)
     - Run 'bash get_sample_name_dic.sh > sample_dic.txt' in order to get the sample list where each accession number separated by space
     - Copy the sample_dic.txt to the qc.slurm for the 'sample_name' variable
     - Make directory called 'qc' and make a sub-directory called 'script_output'
-    - Edit the paths in line 8, 9, and 20 then run qc.slurm
+    - Edit the paths in line 8, 9, 20, 30, 31, and 41 then run qc.slurm
 
-2. Run Qiime2- files can be found in the qiime2 folder
+2. Run Qiime2- files can be found in the qiime2 folder (Each group has their own files)
     - Make directory called 'qiime2' and make sure QIIME2 version 2021.4 installed with all of the plugins listed above.
     - Build the manifest file using the 'manifest_builder.py' by specifiying -i acc_list_file -p path_to_the_raw_reads
     - Get the latest release for the reference database (SILVA).
@@ -30,7 +30,7 @@
     - Add Cmin to line 7 in the 'normalized_srs.sh' script.
     - Run 'bash normalized_srs.sh' from the 'qiime2' directory
     
-4. Create relative abundance plots (heatmap and barplot)- files can be found in the R folder
+4. Create relative abundance plots (heatmap and barplot)- files can be found in the R folder (each group has their own files)
     - Install R version 4.1.2 and create a directory called 'qiime2_output'.
     - Note * At this time, HCC does not support the R packages needed for this step
     - Downlowd the 'Heatmap-barplot.R', 'metadata.tsv', 'table.qza', 'taxonomy.qza' to the 'qiime2_output' directory.
@@ -39,13 +39,13 @@
     - Run the rest of the code in the script.
   
 5. Run sub-analysis: LEfSe, and PICRUSt2
-    - LEfSe analysis steps- files can be found in the LEfSe folder
+    - LEfSe analysis steps- files can be found in the LEfSe folder (each group has their own files)
         * Install LEfSe version 1.0.
         * Make a sub-directory to the 'qiime2' called 'lefse'.
         * Go to the lefse directory and make sure both 'format_rel_level.sh' and 'rel_format.py' are available in the directory.
         * Before running the 'format_rel_level.sh' script make sure to the edit the title for the plots that will be created (line 28, 33, 38, 43, 48, and 53).
         * Run 'format_rel_level.sh'
-    - PICRUSt2 analysis steps- files can be found in the PICRUSt2 folder
+    - PICRUSt2 analysis steps- files can be found in the PICRUSt2 folder (each group has their own files)
         * Install PICRUSt2 version 2.4.
         * Make a sub-directory to the 'qiime2' called 'picrust'.
         * Go to the picrust directory and make sure 'picrust2.slurm'is available in the directory.
@@ -56,11 +56,11 @@
         * Run the 'format_pathway_abun.sh'.
 
 6. Running correlation and statistical analysis: alpha and beta group significant, and differential abundance (ANCOM)
-    - Alpha and beta group significant- files can be found in the Stat folder
+    - Alpha and beta group significant- files can be found in the Stat folder (each group has their own files)
         * Make a sub-directory to the 'qiime2' called 'stat' and make sure it includes 'stat.slurm' and a sub-dirctury called 'script_output'.
         * Before running'stat.slurm' edit the path in line 8, 9, and 15.
         * Run the 'sbatch stat.slurm'
-    - Differential abundance (ANCOM)- files can be found in the ANCOM folder
+    - Differential abundance (ANCOM)- files can be found in the ANCOM folder (each group has their own files)
         * Make a sub-directory to the 'qiime2' called 'ancom' and make sure it includes 'ancom.sh'.
         * Before running 'ancom.sh' script edit the path in line 5.
         * Run the 'bash ancom.sh'.
