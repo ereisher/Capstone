@@ -14,13 +14,9 @@
       * Edit the path in line 8, 9, and 20.
     - Run 'sbatch clean_reads.slurm'
     - Before running 'dada2.slurm' check the following:
-    - Edit the path in line 8, 9, and 28.
-    - Look at the demux visulasation in the artifacts directory to assign trimming and truncating values.
-    - If adapter sequnces were removed, look at the 'paired-end-demux-trimmed.qzv'
-    - If no adapter sequnces were removed, look at the 'demux.qzv' and replace line 33 with '--i-demultiplexed-seqs artifacts/demuxed-paired-end.qza'.
-    - Assign values for the dada2 denoising step line 18-21.
-    - Make sure edit and check the file name of the reference database line 72.
-    - Run the 'sbatch part2.slurm'
+      * Edit the path in line 8, 9, and 28.
+      * Values for dada2 denoising (lines 18-21) were assigned from visualizing 'demux.qzv'
+    - Run the 'sbatch dada2.slurm'
     
   Part 3 before running 'part3.slurm' check the following:
     - Edit the path in line 8, 9, and 15.
