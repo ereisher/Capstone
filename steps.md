@@ -48,10 +48,10 @@
         * Install PICRUSt2 version 2.4.
         * Make a sub-directory to the 'qiime2' called 'picrust'.
         * Go to the picrust directory and make sure 'picrust2.slurm'is available in the directory.
-        * Before running 'picrust2.slurm' script make sure to the edit the path in line 6, 9, 13, 16, and 19.
+        * Before running 'picrust2.slurm' script make sure to the edit the path in lines 8, 9, 13, 18, and 19
         * Once the scripted finish create a directory called 'vis-lefse' and make sure both 'format_pathway_abun.sh', and 'pathway_format.py' are available in the directory.
             * The 'format_pathway_abun.sh' is used to create a visualization for PICRUSt abundance pathway.
-        * Before running the 'format_pathway_abun.sh' script make sure to the edit the path in line 6 and line 20 which contain the title for the plot.
+        * Before running the 'format_pathway_abun.sh' script make sure to the edit the path in lines 6, 9, 13, 16, and 19
         * Run the 'format_pathway_abun.sh'.
 
 6. Running correlation and statistical analysis: alpha and beta group significant, and differential abundance (ANCOM)
