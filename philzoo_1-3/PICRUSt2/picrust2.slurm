@@ -15,5 +15,4 @@ cd /common/claytonlab/ereisher/philzoo_1-3/qiime2/picrust
 
 module load picrust2/2.4
 
-#sed '1d' /common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2/exports/table/feature-table-w-taxa.biom > fixed-feature-table.tsv
 picrust2_pipeline.py -s /common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2/exports/rep-seqs/dna-sequences.fasta -i /common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2/exports/table/feature-table-w-taxa.biom -o results
