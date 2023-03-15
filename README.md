@@ -16,7 +16,7 @@ The first step is pre-processing the data, then cleaning the data and conducting
 
 
 ## Detailed steps in how to run the pipeline is available in the [steps file](https://github.com/ereisher/Capstone/blob/main/steps.md).
-Note that the full analysis could be run in HOLLAND COMPUTING CENTER (HHC) (https://hcc.unl.edu/) without the need to install anything except for the step that uses .
+Note that the full analysis could be run in HOLLAND COMPUTING CENTER (HHC) (https://hcc.unl.edu/) without the need to install anything except for the step that uses R.
 
 ## License
-This repo uses the GNU General Public License v 3.0.
+This repo uses the MIT License.
