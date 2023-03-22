@@ -6,7 +6,7 @@
 - The third aim of the project is to make code available for use via Github
 
 
-## General overview of the modified pipeline used.
+## General overview of the pipeline used.
 ![pipeline-overview](https://github.com/ereisher/Capstone/blob/main/pipeline.drawio.png)
 
 The first step is pre-processing the data*, then cleaning the data** and conducting diversity, phylogenetic, and taxonomic analysis*** using QIIME2. Sub-analysis includes running  LEfSe and PICRUSt. The statistical analysis includes diversity alpha and beta group significance, and differential abundance (ANCOM). 
