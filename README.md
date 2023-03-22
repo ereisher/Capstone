@@ -20,4 +20,4 @@ The first step is pre-processing the data*, then cleaning the data** and conduct
 Note that the full analysis could be run in HOLLAND COMPUTING CENTER (HHC) (https://hcc.unl.edu/) without the need to install anything except for the step that uses R.
 
 ## License
-This repo uses the MIT License.
+This repository uses the MIT License.
