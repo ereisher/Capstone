@@ -9,7 +9,7 @@
 ## General overview of the pipeline used.
 ![pipeline-overview](https://github.com/ereisher/Capstone/blob/main/pipeline.drawio.png)
 
-The first step is obtaining the reads and pre-process them. The next steps are to clean the data*, then denoise the data** and conduct diversity, phylogenetic, and taxonomic analysis*** using QIIME2. Sub-analysis includes running  LEfSe and PICRUSt. The statistical analysis includes relative abundance barplots using R and diversity alpha and beta group significance, and differential abundance (ANCOM). 
+The first step is obtaining the reads and pre-process them. The next steps are to import the data into QIIME2*, then clean and denoise the data** and conduct diversity, phylogenetic, and taxonomic analysis*** using QIIME2. Sub-analysis includes running  LEfSe and PICRUSt. The statistical analysis includes relative abundance barplots using R and diversity alpha and beta group significance, and differential abundance (ANCOM). 
 *clean_reads.slurm **dada2.slurm ***diversity_metrics.slurm
 
 ## Tools installation and packages available in the [tools file](https://github.com/ereisher/Capstone/blob/main/tools.md).
