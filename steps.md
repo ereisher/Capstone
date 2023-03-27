@@ -33,7 +33,8 @@
 4. Create relative abundance plots (heatmap and barplot)- files can be found in the R folder (each group has their own files)
     - Install R version 4.1.2 and create a directory called 'qiime2_output'.
     - Note * At this time, HCC does not support the R packages needed for this step
-    - Downlowd the 'Heatmap-barplot.R', 'metadata.tsv', 'table.qza', 'taxonomy.qza' to the 'qiime2_output' directory.
+    - Download the 'Heatmap-barplot.R', 'metadata.tsv', 'table.qza', 'taxonomy.qza' to the 'qiime2_output' directory.
+    - Download the 'Heatmap-barplot.R', 'metadata.tsv', 'norm-table.qza', 'taxonomy.qza' to the 'qiime2_norm_output' directory.
     - Edit the path in line 3 from the 'Heatmap-barplot.R' script.
     - Install both the 'tidyverse' package and the 'qiime2R' package.
     - Run the rest of the code in the script.
