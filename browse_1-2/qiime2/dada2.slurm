@@ -5,8 +5,8 @@
 #SBATCH --time=24:00:00
 #SBATCH --job-name=analysis_part2
 #SBATCH --partition=batch,guest
-#SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2/err2.out
-#SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2/std2.out
+#SBATCH --error=/common/claytonlab/ereisher/capstone/browse_1-2/qiime2/err2.out
+#SBATCH --output=/common/claytonlab/ereisher/capstone/browse_1-2/qiime2/std2.out
 #SBATCH --open-mode=append
 
 
@@ -25,7 +25,7 @@ n_threads=16
 
 module load qiime2/2022.2
 
-cd /common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2
+cd /common/claytonlab/ereisher/capstone/browse_1-2/qiime2
 
 echo "Starting dada2: `date`"
 
@@ -46,13 +46,13 @@ qiime metadata tabulate \
 
 qiime feature-table filter-samples \
     --i-table artifacts/table.qza \
-    --m-metadata-file PhilMetadata.tsv \
+    --m-metadata-file metadata.tsv \
     --o-filtered-table artifacts/table.qza
 
 qiime feature-table summarize \
         --i-table artifacts/table.qza \
         --o-visualization artifacts/table-viz.qzv \
-        --m-sample-metadata-file PhilMetadata.tsv
+        --m-sample-metadata-file metadata.tsv
 
 qiime feature-table tabulate-seqs \
         --i-data artifacts/rep-seqs.qza \
@@ -87,5 +87,5 @@ qiime taxa filter-table \
 qiime taxa barplot \
     --i-table artifacts/table.qza \
     --i-taxonomy artifacts/taxonomy.qza \
-    --m-metadata-file PhilMetadata.tsv \
+    --m-metadata-file metadata.tsv \
     --o-visualization artifacts/taxa-bar-plots.qzv
