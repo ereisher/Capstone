@@ -13,7 +13,7 @@ library(tidyverse)
 library(qiime2R)
 
 # Read the necessary files: 'metadata.tsv', 'table.qza', 'taxonomy.qza'
-metadata <- read_q2metadata("PhilMetadata.tsv")
+metadata <- read_q2metadata("metadata.tsv")
 features_table <- read_qza("table.qza")$data
 taxonomy_table <- read_qza("taxonomy.qza")$data %>% parse_taxonomy()
 
