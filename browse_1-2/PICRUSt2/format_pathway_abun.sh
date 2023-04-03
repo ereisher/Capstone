@@ -10,7 +10,7 @@ cp /common/claytonlab/ereisher/capstone/browse_1-2/qiime2/picrust/results/pathwa
 gunzip path_abun_unstrat.tsv.gz
 
 # Generate the sample list with conditions
-cut /common/claytonlab/ereisher/capstone/browse_1-2/qiime2/PhilMetadata.tsv -f 1,15 > sample_list_type.tsv
+cut /common/claytonlab/ereisher/capstone/browse_1-2/qiime2/metadata.tsv -f 1,2 > sample_list_type.tsv
 
 # Get the correct format to run LEfSe
 python pathway_format.py -i sample_list_type.tsv -r /common/claytonlab/ereisher/capstone/browse_1-2/qiime2/picrust/vis-lefse/path_abun_unstrat.tsv -o path_abun_modified.tsv
