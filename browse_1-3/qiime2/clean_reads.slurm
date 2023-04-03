@@ -5,8 +5,8 @@
 #SBATCH --time=12:00:00
 #SBATCH --job-name=analysis_part1
 #SBATCH --partition=batch,guest
-#SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2/err.out
-#SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2/std.out
+#SBATCH --error=/common/claytonlab/ereisher/capstone/browse_1-3/qiime2/err.out
+#SBATCH --output=/common/claytonlab/ereisher/capstone/browse_1-3/qiime2/std.out
 #SBATCH --open-mode=append
 
 ##########################################################################
@@ -17,7 +17,7 @@
 
 module load qiime2/2022.2
 
-cd /common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2
+cd /common/claytonlab/ereisher/capstone/browse_1-3/qiime2
 
 mkdir -p artifacts
 mkdir -p exports
