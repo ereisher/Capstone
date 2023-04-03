@@ -5,8 +5,8 @@
 #SBATCH --time=10:00:00
 #SBATCH --job-name=qc
 #SBATCH --partition=batch
-#SBATCH --error=/work/claytonlab/ereisher/philzoo/qc/script_output/err.out
-#SBATCH --output=/work/claytonlab/ereisher/philzoo/qc/script_output/std.out
+#SBATCH --error=/work/claytonlab/ereisher/capstone/qc/script_output/err.out
+#SBATCH --output=/work/claytonlab/ereisher/capstone/qc/script_output/std.out
 #SBATCH --open-mode=append
 
 
@@ -17,7 +17,7 @@
 
 module load fastqc/0.11
 
-cd /work/claytonlab/ereisher/philzoo/raw_reads/raw_reads
+cd /work/claytonlab/ereisher/capstone/raw_reads/raw_reads
 
 declare -a sample_name=(SRR20140307 SRR20140308 SRR20140309 SRR20140310 SRR20140311 
                         SRR20140312 SRR20140313 SRR20140314 SRR20140315 SRR20140316 SRR20140317 
@@ -38,7 +38,7 @@ echo "Finishied QC"
 ############################################
 
 # Run multiqc in order to look at the QC of the data in one report. 
-cd /work/claytonlab/ereisher/philzoo/qc
+cd /work/claytonlab/ereisher/capstone/qc
 module load multiqc/py37/1.8
 mkdir multiqc
 echo "Started multiqc"
