@@ -5,14 +5,14 @@
 #SBATCH --time=12:00:00
 #SBATCH --job-name=analysis_part3
 #SBATCH --partition=batch,guest
-#SBATCH --error=/common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2/err3.out
-#SBATCH --output=/common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2/std3.out
+#SBATCH --error=/common/claytonlab/ereisher/capstone/browse_1-3/qiime2/err3.out
+#SBATCH --output=/common/claytonlab/ereisher/capstone/browse_1-3/qiime2/std3.out
 #SBATCH --open-mode=append
 
 
 module load qiime2/2022.2
 
-cd /common/claytonlab/ereisher/philzoo/philzoo_1-3/qiime2
+cd /common/claytonlab/ereisher/capstone/browse_1-3/qiime2
 
 ############################################
 # Declare important local variables
@@ -27,7 +27,7 @@ qiime diversity core-metrics-phylogenetic \
     --i-phylogeny artifacts/rooted-tree.qza \
     --i-table artifacts/table.qza \
     --p-sampling-depth $p_sampling_depth \
-    --m-metadata-file PhilMetadata.tsv \
+    --m-metadata-file metadata.tsv \
     --output-dir core-metrics-results
 
 
