@@ -13,7 +13,7 @@ cp ../exports/phyla_table_rel_level_6/phyla_table_rel_level_6.tsv .
 cp ../exports/phyla_table_rel_level_7/phyla_table_rel_level_7.tsv .
 
 # Generate the sample list with conditions
-cut ../PhilMetadata.tsv -f 1,2 > sample_list_type.tsv
+cut ../metadata.tsv -f 1,2 > sample_list_type.tsv
 
 grep -v "Eukar" phyla_table_rel_level_2.tsv >tmp
 grep -v "Unassigned" tmp >phyla_table_rel_level_2.tsv 
