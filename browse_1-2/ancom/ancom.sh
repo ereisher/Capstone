@@ -2,7 +2,7 @@
 
 module load qiime2/2022.2
 
-cd /common/claytonlab/ereisher/philzoo/philzoo_1-2/qiime2/ancom
+cd /common/claytonlab/ereisher/capstone/browse_1-2/qiime2/ancom
 
 
 qiime taxa collapse \
@@ -17,7 +17,7 @@ qiime composition add-pseudocount \
     
 qiime composition ancom \
     --i-table comp_level_2_table.qza \
-    --m-metadata-file ../PhilMetadata.tsv \
+    --m-metadata-file ../metadata.tsv \
     --m-metadata-column Group_AnimalID \
     --o-visualization ancom_level_2_type.qzv
     
@@ -35,7 +35,7 @@ qiime composition add-pseudocount \
     
 qiime composition ancom \
     --i-table comp_level_3_table.qza \
-    --m-metadata-file ../PhilMetadata.tsv \
+    --m-metadata-file ../metadata.tsv \
     --m-metadata-column Group_AnimalID \
     --o-visualization ancom_level_3_type.qzv
 
@@ -53,7 +53,7 @@ qiime composition add-pseudocount \
     
 qiime composition ancom \
     --i-table comp_level_4_table.qza \
-    --m-metadata-file ../PhilMetadata.tsv \
+    --m-metadata-file ../metadata.tsv \
     --m-metadata-column Group_AnimalID \
     --o-visualization ancom_level_4_type.qzv
 
@@ -70,7 +70,7 @@ qiime composition add-pseudocount \
     
 qiime composition ancom \
     --i-table comp_level_5_table.qza \
-    --m-metadata-file ../PhilMetadata.tsv \
+    --m-metadata-file ../metadata.tsv \
     --m-metadata-column Group_AnimalID \
     --o-visualization ancom_level_5_type.qzv
 
@@ -87,7 +87,7 @@ qiime composition add-pseudocount \
     
 qiime composition ancom \
     --i-table comp_level_6_table.qza \
-    --m-metadata-file ../PhilMetadata.tsv \
+    --m-metadata-file ../metadata.tsv \
     --m-metadata-column Group_AnimalID\
     --o-visualization ancom_level_6_type.qzv
 
@@ -104,7 +104,7 @@ qiime composition add-pseudocount \
     
 qiime composition ancom \
     --i-table comp_level_7_table.qza \
-    --m-metadata-file ../PhilMetadata.tsv \
+    --m-metadata-file ../metadata.tsv \
     --m-metadata-column Group_AnimalID\
     --o-visualization ancom_level_7_type.qzv
 
