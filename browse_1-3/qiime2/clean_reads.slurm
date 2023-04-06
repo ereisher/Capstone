@@ -11,7 +11,6 @@
 
 ##########################################################################
 # Import the data into QIIME2 then summarize it using demux
-# Trim adapter sequnces using cutadapt then summarize it using demux
 ##########################################################################
 
 
