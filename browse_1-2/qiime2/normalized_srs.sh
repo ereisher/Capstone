@@ -4,7 +4,7 @@ module load qiime2/2021.4
 
 qiime srs SRS   \
     --i-table artifacts/table.qza   \
-    --p-c-min 5800   \
+    --p-c-min 10684   \
     --o-normalized-table artifacts/norm-table.qza   \
     --verbose
     
